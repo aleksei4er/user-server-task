@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  taskserver:
+    image: ${DOCKER_REGISTRY-}taskserver
+    build:
+      context: .
+      dockerfile: TaskServer/Dockerfile
